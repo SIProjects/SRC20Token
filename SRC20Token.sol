@@ -3,15 +3,15 @@ import './SafeMath.sol';
 
 
 /**
-    QRC20Token Standard Token implementation
+    SRC20Token Standard Token implementation
 */
-contract QRC20Token is SafeMath {
+contract SRC20Token is SafeMath {
     string public constant standard = 'Token 0.1';
-    uint8 public constant decimals = 8; // it's recommended to set decimals to 8 in QTUM
+    uint8 public constant decimals = 8; // it's recommended to set decimals to 8 in SICash
 
     // you need change the following three values
-    string public constant name = 'QRC TEST';
-    string public constant symbol = 'QTC';
+    string public constant name = 'SRC TEST';
+    string public constant symbol = 'STC';
     //Default assumes totalSupply can't be over max (2^256 - 1).
     //you need multiply 10^decimals by your real total supply.
     uint256 public totalSupply = 10**9 * 10**uint256(decimals);
@@ -22,7 +22,7 @@ contract QRC20Token is SafeMath {
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
-    function QRC20Token() public {
+    function SRC20Token() public {
         balanceOf[msg.sender] = totalSupply;
     }
 
@@ -71,7 +71,7 @@ contract QRC20Token is SafeMath {
         return true;
     }
 
-    // disable pay QTUM to this contract
+    // disable pay SICash to this contract
     function () public payable {
         revert();
     }

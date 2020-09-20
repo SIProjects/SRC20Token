@@ -1,5 +1,5 @@
-# QRC20Token
-QTUM QRC20 Token Template
+# SRC20Token
+SICash SRC20 Token Template
 
-* [Deployment Guide](https://docs.qtum.site/en/QRC20-Token-Introduce.html)
-* [Integration Guide](https://docs.qtum.site/en/QRC20-integration.html)
+* [Deployment Guide](https://docs.sicash.site/en/SRC20-Token-Introduce.html)
+* [Integration Guide](https://docs.sicash.site/en/SRC20-integration.html)
